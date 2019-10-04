@@ -17,7 +17,12 @@ def clear_screen():
     os.system('cls' if os.name=='nt' else 'clear')
 
 def title():
-    print(text2art('gerald', font='alpha'))
+    print(text2art('g', font='alpha'))
+    print(text2art('e', font='alpha'))
+    print(text2art('r', font='alpha'))
+    print(text2art('a', font='alpha'))
+    print(text2art('l', font='alpha'))
+    print(text2art('d', font='alpha'))
 
 def north():
     print ("To go north press n then enter")

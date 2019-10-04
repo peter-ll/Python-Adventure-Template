@@ -40,8 +40,8 @@ def setup():
     #Our variable "name" is used to store our name, captured by keyboard input.
     name = input("What is your name, earth hero?")
     #randint is a great way of adding some variety to your players statistics through randomness
-    HP = randint(5,20)
-    MP = randint(5,20)
+    HP = randint(100,200)
+    MP = randint(100,200)
 
 def villager():
     #This will create a randomly named Villager to interact with

@@ -49,7 +49,7 @@ def villager():
     global response
     #Below is a list, we can store lots of things in a list and then retrieve them later.
     responses = ["Hi", "Are you a hero?", "Are you from this village?", "There has been a dark shadow cast across the village"]
-    npcnamechoice = ["Roger", "Dexter", "Sarah", "Susan"]
+    npcnamechoice = ["fredrick sr.", "fredrick", "fredrick jr.", "fredrick the third"]
     #Shuffle will shuffle the list contents into a random order.
     shuffle(npcnamechoice)
     npcname = npcnamechoice[0]

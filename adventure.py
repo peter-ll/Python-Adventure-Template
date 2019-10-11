@@ -156,10 +156,13 @@ if fight == "y":
         print ("The ogre swings a club at you and causes %s of damage" % str(enemyhit))
         HP = HP - enemyhit
         print (HP)
+        if enemyHP =< 0:
+            print ("congrations you did it")
+        else:
 else:
     print ("You turn and run away from the ogre")
 
-print ("This is where this template ends, this is now YOUR world, build your adventure and share it with the world")
+print ("you died lol")
 
 print ("   _       _                 _")
 print ("  /_\   __| |_   _____ _ __ | |_ _   _ _ __ ___")

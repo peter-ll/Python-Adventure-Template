@@ -156,7 +156,7 @@ if fight == "y":
         print ("The ogre swings a club at you and causes %s of damage" % str(enemyhit))
         HP = HP - enemyhit
         print (HP)
-        if enemyHP =< 0:
+        if enemyHP <= 0:
             print ("congrations you did it")
         else:
 else:

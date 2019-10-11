@@ -146,7 +146,7 @@ sleep(3)
 fight = input("Do you wish to fight?" )
 
 if fight == "y":
-    while HP > 0 & while enemyHP > 0:
+    while HP > 0 & enemyHP > 0:
 #This loop will only work while our characters HP is greater than 0.
         hit = randint(0,5)
         print ("You swing your sword and cause %s damage" % str(hit))

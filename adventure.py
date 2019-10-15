@@ -91,7 +91,7 @@ global HP
 global MP
 global move
 global enemyHP
-print ("Welcome to the land of Narule, %s" % name)
+print ("Welcome to bootleg narnia, %s" % name)
 #Sleep is Python's way of pausing the game for a specified number of seconds
 sleep(2)
 #Below we are using the helper functions to join a string of text to an integer via the str() helper.
@@ -103,12 +103,12 @@ print ("Your magic skill is" + " " + str(MP))
 print ("Would you like to venture out into the land? Press y then enter to continue")
 #Below we use input to ask for user input, and if it is equal to y, then the code underneath is run.
 if input() == "y":
-    print ("You are in your home, with a roaring fireplace in front of you, above the fire you can see your sword and shield")
-    print ("Would you like to take your sword and shield? Press y then enter to continue")
+    print ("You are in your home, with a roaring fireplace in front of you, above the fire you can see your copper sword")
+    print ("Would you like to take your broken copper sword? Press y then enter to continue")
     if input() == "y":
         #This is a list, and it can store many items, and to do that we "append" items to the list.
         weapons = []
-        weapons.append("sword")
+        weapons.append("copper sword")
         weapons.append("shield")
         print ("You are now carrying your %s and your %s" % (weapons[0], weapons[1]))
         print ("Armed with your %s and %s you swing open the door to your home and see a green valley gleaming in the sunshine." % (weapons[0], weapons[1]))
@@ -116,7 +116,7 @@ if input() == "y":
         print ("You choose not to take your weapons")
         print ("Armed with your sense of humour, You swing open the door to see a green valley full of opportunity awaiting you.")
 else:
-    print ("You stay at home, sat in your favourite chair watching the fire grow colder. The land of Narule no longer has a hero.")
+    print ("You stay at home, sat in your favourite chair watching the fire grow colder. Bootleg narnia no longer has a hero.")
     print ("Game Over")
     sys.exit(0)
 

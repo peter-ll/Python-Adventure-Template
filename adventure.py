@@ -60,7 +60,7 @@ def villager():
     npcname = npcnamechoice[0]
     print ("\n["+npcname+":] Hello, my name is "+npcname+", Would you like to talk to me?\n")
     shuffle(responses)
-    print ("Press y to talk to the villager")
+    print ("Press y to talk to fredrick")
     if input() == "y":
         print ("%s: %s" % (npcname, responses[0]))
     else:
@@ -156,28 +156,5 @@ if fight == "y":
         print ("The ogre swings a club at you and causes %s damage" % str(enemyhit))
         HP = HP - enemyhit
         print (HP)
-        if enemyHP <= 0:
-            print ("congrations you did it")
-        elif HP <= 0:
-            print ("you died lol")
-
-            print ("   _       _                 _")
-            print ("  /_\   __| |_   _____ _ __ | |_ _   _ _ __ ___")
-            print (" //_\\ / _` \ \ / / _ \ '_ \| __| | | | '__/ _ \ ")
-            print ("/  _  \ (_| |\ V /  __/ | | | |_| |_| | | |  __/")
-            print ("\_/ \_/\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|)")
-
-            print ("                     _ _")
-            print ("  __ ___      ____ _(_) |_ ___")
-            print (" / _` \ \ /\ / / _` | | __/ __|")
-            print ("| (_| |\ V  V / (_| | | |_\__ \ ")
-            print (" \__,_| \_/\_/ \__,_|_|\__|___/)")
-
-            print (" _   _  ___  _   _")
-            print ("| | | |/ _ \| | | |")
-            print ("| |_| | (_) | |_| |")
-            print (" \__, |\___/ \__,_|")
-            print (" |___/")
-
 else:
     print ("You turn and run away from the ogre")

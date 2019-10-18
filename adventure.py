@@ -44,9 +44,14 @@ def setup():
     global MP
     #Our variable "name" is used to store our name, captured by keyboard input.
     name = input("What is your name, earth hero?")
+    if input() == "gerald":
+        print ("hey gerald whats poppin")
+        HP = randint(100,200)
+        MP = randint(100,200)
+    else:
     #randint is a great way of adding some variety to your players statistics through randomness
-    HP = randint(100,200)
-    MP = randint(100,200)
+    HP = randint(10,20)
+    MP = randint(10,20)
 
 def villager():
     #This will create a randomly named Villager to interact with
@@ -103,13 +108,12 @@ print ("Your magic skill is" + " " + str(MP))
 print ("Would you like to venture out into the land? Press y then enter to continue")
 #Below we use input to ask for user input, and if it is equal to y, then the code underneath is run.
 if input() == "y":
-    print ("You are in your home, with a roaring fireplace in front of you, above the fire you can see your copper sword")
-    print ("Would you like to take your broken copper sword? Press y then enter to continue")
+    print ("You are in your home, with a roaring fireplace in front of you, above the fire you can see your broken sword")
+    print ("Would you like to take your broken sword? Press y then enter to continue")
     if input() == "y":
         #This is a list, and it can store many items, and to do that we "append" items to the list.
         weapons = []
-        weapons.append("copper sword")
-        weapons.append("shield")
+        weapons.append("broken sword")
         print ("You are now carrying your %s and your %s" % (weapons[0], weapons[1]))
         print ("Armed with your %s and %s you swing open the door to your home and see a green valley gleaming in the sunshine." % (weapons[0], weapons[1]))
     else:

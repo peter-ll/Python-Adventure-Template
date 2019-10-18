@@ -49,16 +49,15 @@ def setup():
         HP = randint(100,200)
         MP = randint(100,200)
     else:
-    #randint is a great way of adding some variety to your players statistics through randomness
-    HP = randint(10,20)
-    MP = randint(10,20)
+        HP = randint(10,20)
+        MP = randint(10,20)
 
 def villager():
     #This will create a randomly named Villager to interact with
     global npcname
     global response
     #Below is a list, we can store lots of things in a list and then retrieve them later.
-    responses = ["Hi", "Are you a hero?", "Are you from this village?", "There has been a dark shadow cast across the village"]
+    responses = ["yo", "there is somthing emitting a terrible stench upon this town", "hey", "there has been a terrible smell cast upon this village"]
     npcnamechoice = ["fredrick sr.", "fredrick", "fredrick jr.", "fredrick the third"]
     #Shuffle will shuffle the list contents into a random order.
     shuffle(npcnamechoice)
@@ -78,7 +77,7 @@ def enemy():
     enemyHP = randint(5,20)
     enemyMP = randint(5,20)
     #Below is the enemy's name, perhaps you could change this to a list and then shuffle the list, such as we did for the villager above.
-    enemyname = "Ogre"
+    enemyname = "troll"
     print ("\nSuddenly you hear a roar, and from the shadows you see an "+enemyname+" coming straight at you....")
     #print enemyname
     print ("Your enemy has %s Health Points" % str(enemyHP))
@@ -108,19 +107,19 @@ print ("Your magic skill is" + " " + str(MP))
 print ("Would you like to venture out into the land? Press y then enter to continue")
 #Below we use input to ask for user input, and if it is equal to y, then the code underneath is run.
 if input() == "y":
-    print ("You are in your home, with a roaring fireplace in front of you, above the fire you can see your broken sword")
+    print ("You are in your home, extremely drunk because of the previous night with your friend Humphrey, and through your cloudy vision, you see your broken sword sitting upon the fireplace")
     print ("Would you like to take your broken sword? Press y then enter to continue")
     if input() == "y":
         #This is a list, and it can store many items, and to do that we "append" items to the list.
         weapons = []
         weapons.append("broken sword")
-        print ("You are now carrying your %s and your %s" % (weapons[0], weapons[1]))
-        print ("Armed with your %s and %s you swing open the door to your home and see a green valley gleaming in the sunshine." % (weapons[0], weapons[1]))
+        print ("You are now carrying your %s, without knowing where to go" % (weapons[0]))
+        print ("Armed with your %s you swing open the door to your home and see a green valley gleaming in the sunshine." % (weapons[0]))
     else:
         print ("You choose not to take your weapons")
         print ("Armed with your sense of humour, You swing open the door to see a green valley full of opportunity awaiting you.")
 else:
-    print ("You stay at home, sat in your favourite chair watching the fire grow colder. Bootleg narnia no longer has a hero.")
+    print ("well you must be fun at parties.")
     print ("Game Over")
     sys.exit(0)
 
@@ -158,7 +157,7 @@ if fight == "y":
         enemyHP = enemyHP - hit
         print (enemyHP)
         enemyhit = randint(0,5)
-        print ("The ogre swings a club at you and causes %s damage" % str(enemyhit))
+        print ("The smelly troll swings a club at you and causes %s damage" % str(enemyhit))
         HP = HP - enemyhit
         print (HP)
     if HP <= 0 :
@@ -166,4 +165,4 @@ if fight == "y":
     elif enemyHP <= 0 :
         print ("you died lol")
 else:
-    print ("You turn and run away from the ogre")
+    print ("You turn and run away from the smelly troll")
